@@ -1,0 +1,21 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+em{font-style: normal;}
+a{text-decoration: none; color: #000}
+
+.cf:after{content:""; display: block; clear: both}
+.fl{float: left}
+
+/* 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
+.pm{text-indent: -99999px; display: block; font-size: 0; overflow: hidden; line-height: 0}
+/* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 보여주고자 할때 사용 */
+.wa{display: block; overflow: hidden; width: 100%; height: 100%; position: relative; z-index: -1}
+/* 대체 텍스트가 아닌 접근성을 위한 숨김 */
+.so{width: 0; height: 0; text-indent: -9999px; line-height: 0; overflow: hidden; position: absolute}
+
+#skip { z-index: 999999999; position: absolute; top: 0; left: 0; width: 100% }
+#skip>li { font-size: 0 }
+#skip>li>a { display: block; width: 100%; padding: 0; font-size: 0; background: #000; color: #fff; text-align: center }
+#skip>li>a:focus { padding: 10px 0; font-size: 17px; font-family: 'Roboto', 'Noto Sans KR', sans-serif}
