@@ -68,12 +68,10 @@ $(function () {
   $(window).on("scroll", function () {
     var scrollTop = $(this).scrollTop() || $(this).pageYOffset;
     var wwidth = $(window).width();
-    if (scrollTop > 20) {
-      if (wwidth > 1179) {
-        $('#header').css({ "position": "fixed", "background": "#fff", "top": "-70px", "z-index": "99", "border": "1px solid #ddd" });
-      } else {
-        $('#header').css({ "position": "fixed", "background": "#fff", "top": "-32px" });
-      }
+    if (scrollTop > 20 && wwidth > 1179) {
+      $('#header').css({ "position": "fixed", "background": "#fff", "top": "-70px", "z-index": "99", "border": "1px solid #ddd" });
+    }else if(scrollTop > 20){
+        $('#header').css({ "position": "fixed", "background": "#fff", "top": "-32px", "z-index": "99" });
     } else {
       $('#header').css({ "position": "relative", "background": "none", "top": "0" });
     }
